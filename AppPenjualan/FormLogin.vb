@@ -18,9 +18,13 @@
 
         txtPass.BackColor = ColorTranslator.FromHtml("#292b2c")
         txtPass.ForeColor = ColorTranslator.FromHtml("#fff")
+        Call kondisiAwal()
+    End Sub
 
+    Sub kondisiAwal()
         txtKode.Clear()
         txtPass.Clear()
+        txtKode.Focus()
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
