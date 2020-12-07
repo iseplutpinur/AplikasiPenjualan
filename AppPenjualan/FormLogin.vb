@@ -48,9 +48,9 @@
         Else
             Try
                 Call koneksi()
-                Cmd = New Odbc.OdbcCommand("SELECT * FROM tbl_admin WHERE kodeadmin='" &
+                Cmd = New Odbc.OdbcCommand("SELECT * FROM tbl_admin WHERE Kode_Admin='" &
                                        txtKode.Text &
-                                       "' AND passwordadmin='" &
+                                       "' AND Password_Admin='" &
                                        txtPass.Text & "'", Conn)
                 Rd = Cmd.ExecuteReader
                 Rd.Read()
